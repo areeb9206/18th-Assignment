@@ -8,32 +8,39 @@ header {
   gap: 10px;
   background-color: black;
   align-items: center;
+  padding:0 20px;
 }
 .logo {
   width: 200px;
 }
-
-nav {
-  display: flex !important ;
-  padding: 10px !important ;
-  gap: 20px !important ;
+.nav-main{
+display: flex;
+gap: 10px;
 }
 .nav-links-1 {
   padding: 10px !important ;
 }
 
 /* SECTION 1 */
-.section-1{
-padding: 70px 15px 120px 15px !important ;
+.section-1-imgs {
+  width: 250px;
 }
-.section-1-imgs{
-    width: 250px;
-}
-.btn-div{
-    display: block;
-margin: 30px auto;
+.btn-div {
+  display: block !important;
+  margin: 30px auto !important;
 }
 
+/* SECTION TWO  */
+.section-2-main {
+  gap: 30px;
+}
+
+/* FOOTER  */
+.footer-main {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
 
 @media only screen and (max-width: 480px) {
   body {
@@ -43,34 +50,68 @@ margin: 30px auto;
     width: 100%;
     background-color: black;
     flex-wrap: wrap;
+    padding:20px 20px;
   }
   .logo-div {
     margin: auto;
   }
-  nav {
-    margin: auto !important ;
-    gap: 5px !important ;
+
+  nav { justify-content: center;
+  
+  flex-wrap: wrap;
+   font-size: 1rem;
+   /* padding: 0% 0%!important; */
   }
 
+ /* SECOND SECTION  */
 
+  .section-2-first-child {
+    text-align: center;
+    gap: 20px;
+  }
+  .section-2-second-child {
+    text-align: center;
+    flex-wrap: wrap-reverse !important;
+    gap: 20px;
+  }
 
+  .section-2-third-child {
+    text-align: center;
+    gap: 20px;
+  }
 
+  /* SECTION FOURTH  */
 
-/* SECOND SECTION  */
-.section-2-first-child{
-text-align: center;
-gap: 20px;
+  .section-4-first-child{
+width: 100%;
+  }
+.section-4-img{
+  margin: auto;
 }
-.section-2-second-child{
-text-align: center;
-flex-wrap: wrap-reverse;
-gap: 20px;
-} 
+
+  .section-4-second-child {
+    text-align: center;
+    /* width: 90%; */
+  }
+/* SECTION FIVE  */
+
+.section-five-sub-sec-imgs{
+  width: 100%;
+}
 
 
+  /* FOOTER  */
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+  }
 
-
-
-
-
+  .footer-first-child {
+    width: fit-content !important;
+    padding: 0px 10px;
+  }
+  .footer-last {
+    font-size: 0.8rem;
+  }
 }
